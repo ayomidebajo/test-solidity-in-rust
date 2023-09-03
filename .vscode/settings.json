@@ -1,0 +1,5 @@
+{
+  "rust-analyzer.linkedProjects": [
+    "mycontractproject/forge_tests/Cargo.toml"
+  ],
+}
