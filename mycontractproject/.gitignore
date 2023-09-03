@@ -4,4 +4,4 @@ out/
 yarn.lock
 **/target
 lib/
-.DS_Store
+**.DS_Store
