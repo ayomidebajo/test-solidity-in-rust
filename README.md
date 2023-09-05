@@ -1,14 +1,7 @@
 ## Getting Started
 
-Create a project using this example:
+Clone this repository and install its dependencies:
 
-```bash
-npx thirdweb create --contract --template forge-starter
-```
-
-You can start editing the page by modifying `contracts/Contract.sol`.
-
-To add functionality to your contracts, you can use the `@thirdweb-dev/contracts` package which provides base contracts and extensions to inherit. The package is already installed with this project. Head to our [Contracts Extensions Docs](https://portal.thirdweb.com/thirdweb-deploy/contract-extensions) to learn more.
 
 ## Building the project
 
@@ -20,28 +13,20 @@ npm run build
 yarn build
 ```
 
-to compile your contracts. This will also detect the [Contracts Extensions Docs](https://portal.thirdweb.com/thirdweb-deploy/contract-extensions) detected on your contract.
+## Testing the project
 
-## Deploying Contracts
+To run the tests in solidity, You'll need to comment out this function in the test contract `testDropWithCustomTokens` before running tests:
+	```bash
+	
+	forge test
+	```
 
-When you're ready to deploy your contracts, just run one of the following command to deploy you're contracts:
+To run the tests in rust, uncomment `testDropWithCustomTokens`, `cd` into `forge_tests` directory and run:
+	```bash
+	cargo test
+	```
+To run rust tests with the println statements, run:
+	```bash
+	cargo test -- --nocapture
+	```
 
-```bash
-npm run deploy
-# or
-yarn deploy
-```
-
-## Releasing Contracts
-
-If you want to release a version of your contracts publicly, you can use one of the followings command:
-
-```bash
-npm run release
-# or
-yarn release
-```
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
